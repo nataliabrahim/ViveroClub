@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /*background: url("../img/hero-bg.jpg") center center no-repeat;*/
+  background: url("../img/hero-fondo3.jpg") center center no-repeat;
   background-color: #ffffff;
   background-size: cover;
 }
@@ -1229,8 +1229,8 @@ section {
 /* IMG DE PLANES*/
 
 .img-plan {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
 }
 
 
@@ -1700,9 +1700,11 @@ div#row-precios {
 
 #contacto-posicion {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
 
@@ -1725,13 +1727,13 @@ Black: 900
 /*------------BANNER----------*/
 
 #banner {
-  background-image: url('../img/banner-pag-detalle-2.jpg');
+  background-image: url('../img/banner\ .jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 }
 
 
@@ -1740,6 +1742,7 @@ Black: 900
 .bordes {
   padding: 0px 0;
   margin: 0px 0;
+  background-color: transparent;
 }
 
 
@@ -1811,6 +1814,7 @@ Black: 900
   transition: 0.3s;
   height: 100%;
   background-color: white;
+  border-radius: 15px;
 }
 
 .values .box img {
