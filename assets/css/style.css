@@ -414,11 +414,14 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  background: url("../img/hero-fondo4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment:scroll; 
+  /* no poner fixed porque no se deslizala la seccion entera*/
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-fondo3.jpg") center center no-repeat;
-  background-color: #ffffff;
-  background-size: cover;
 }
 
 #hero .container, #hero .container-fluid {
@@ -467,10 +470,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /**************************************************************/
 
-
+/*cambio de traccion del hero*/
 @media (min-width: 1200px) {
   #hero {
-    background-attachment: fixed;
+    background-attachment: scroll;
+    
   }
 }
 
@@ -494,6 +498,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+
+  #hero {
+    background: url("../img/hero-fondo8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment:scroll; 
+  }
+
   #hero h1 {
     font-size: 26px;
     line-height: 36px;
@@ -583,14 +596,15 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about {
   padding: 120px 0;
 }
 
 .about .content h3 {
   font-weight: 600;
-  font-size: 32px;
-  color: #2c4964;
+  font-size: 40px;
+  color: #705ECE;
 }
 
 .about .content ul {
@@ -618,7 +632,7 @@ section {
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 50px 10px 28px;
+  padding: 10px 25px 10px 25px;
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
@@ -637,27 +651,131 @@ section {
   top: 12px;
 }
 
+
 /*--------------------------------------------------------------
-# Counts
+# Suscripcion elegida
 --------------------------------------------------------------*/
-.counts {
-  background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(123, 39, 216, 0.5) 100%), url("../img/counts-bg.png") center center no-repeat;
-  padding: 80px 0 60px 0;
+
+#about2 {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.counts .counters span {
-  font-size: 48px;
-  display: block;
-  color: #fff;
+.about2 {
+  padding: 120px 0;
+}
+
+.about2 .content h3 {
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: #444444;
 }
 
-.counts .counters p {
+.about2 {
+  color: #705ECE;
+}
+
+.about2 .content ul {
+  list-style: none;
   padding: 0;
-  margin: 0 0 20px 0;
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
+}
+
+.about2 .content ul li {
+  padding-bottom: 10px;
+}
+
+.about2 .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #5846f9;
+}
+
+.about2 .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about2 .content .read-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 50px 10px 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: #FF595B;
+  position: relative;
+}
+
+.about2 .content .read-more:hover {
+  background: #D04547;
+}
+
+.about2 .content .read-more i {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+
+/*--------------------------------------------------------------
+# GIFT CARD
+--------------------------------------------------------------*/
+
+.about3 {
+  padding: 120px 0;
+}
+
+.about3 .content h3 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #705ECE;
+}
+
+.about3 .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about3 .content ul li {
+  padding-bottom: 10px;
+}
+
+.about3 .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #5846f9;
+}
+
+.about3 .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about3 .content .read-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: #FF595B;
+  position: relative;
+}
+
+.about3 .content .read-more:hover {
+  background: #D04547;
+}
+
+.about3 .content .read-more i {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -802,7 +920,7 @@ section {
 --------------------------------------------------------------*/
 
 .features {
-  background-color: #f9f8ff;
+  background-color: #ffffff;
 }
 
 
@@ -840,6 +958,31 @@ section {
   margin-right: 40px;
 }
 
+/***************** boton para seccion caracteristicas ****************/
+.features .content .read-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 50px 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: #FF595B;
+  position: relative;
+}
+
+.features .content .read-more:hover {
+  background: #D04547;
+}
+
+.features .content .read-more i {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -863,7 +1006,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #2c4964;
+  color: #705ece;
 }
 
 .testimonials .testimonial-item h4 {
@@ -873,7 +1016,7 @@ section {
 }
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #b1a9fc;
+  color: #c498fc;
   font-size: 26px;
 }
 
@@ -912,11 +1055,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5846f9;
+  border: 1px solid #705ece;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5846f9;
+  background-color: #705ece;
 }
 
 @media (max-width: 767px) {
@@ -974,7 +1117,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(88, 70, 249, 0.8);
+  background: #705ece;
   position: absolute;
   left: 30px;
   right: 30px;
@@ -1140,8 +1283,8 @@ section {
 }
 
 .pricing h4 {
-  font-size: 36px;
-  color: #5846f9;
+  font-size: 50px;
+  color: #705ece;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
@@ -1155,8 +1298,16 @@ section {
 
 .pricing h4 span {
   color: #bababa;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
+}
+
+.pricing h6 {
+  font-size: 20px;
+  color: #705ece;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
 }
 
 .pricing ul {
@@ -1173,7 +1324,7 @@ section {
 }
 
 .pricing ul i {
-  color: #5846f9;
+  color: #705ece;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1205,12 +1356,17 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+  background: #cb3b3d;
 }
 
 .pricing .featured h3 {
   color: #fff;
-  background: #5846f9;
+  background: #705ece;
+}
+
+.pricing #otro-box h3{
+  color: #fff;
+  background: #C498FC;
 }
 
 .pricing .advanced {
@@ -1242,7 +1398,7 @@ section {
 }
 
 .faq .section-title h2, .faq .section-title p {
-  color: #000000;
+  color: #444444;
 }
 
 .faq .section-title h2::after {
@@ -1261,12 +1417,12 @@ section {
 
 .faq .faq-list li + li {
   margin-top: 15px;
-  background-color: #705ECE;
+  background-color: #C498FC;
 }
 
 .faq .faq-list li {
   padding: 30px;
-  background: #fff;
+  background: #C498FC;
   border-radius: 5px;
   position: relative;
 }
@@ -1422,7 +1578,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #5846f9;
+  border-color: #ff595b;
 }
 
 .contact .php-email-form input {
@@ -1434,7 +1590,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #5846f9;
+  background: #ff595b;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1443,7 +1599,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #7b27d8;
+  background: #cb3b3d;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1643,7 +1799,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #5846f9;
+  background: #cb3b3d;
 }
 
 #footer .copyright-wrap {
@@ -1728,7 +1884,7 @@ Black: 900
 
 #banner {
   background-image: url('../img/banner\ .jpg');
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1740,9 +1896,9 @@ Black: 900
 /*------------BORDES CURVAS----------*/
 
 .bordes {
-  padding: 0px 0;
-  margin: 0px 0;
-  background-color: transparent;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border-spacing: 0px;
 }
 
 
@@ -1777,19 +1933,17 @@ Black: 900
   color: white;
 }
 
-/*
-#seccion-suscripcion {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-*/
+
+
+
 
 
 /* seccion newsletter*/
 .footer2 {
   background-image: url('../img/fondo-seccion-newsletter-3.jpg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 
@@ -1803,9 +1957,46 @@ Black: 900
 
 /**********************************************************************************/
 
+/*--------------------------------------------------------------
+# Values (Contenido caja)
+--------------------------------------------------------------*/
+
+
+.values2 .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.values2 .box img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.values2 .box h3 {
+  font-size: 24px;
+  color: #705ECE;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.values2 .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.values2 .box:hover img {
+  transform: scale(1);
+}
+
+
 
 /*--------------------------------------------------------------
-# Values
+# Values (Home)
 --------------------------------------------------------------*/
 
 
@@ -1839,3 +2030,29 @@ Black: 900
 .values .box:hover img {
   transform: scale(1);
 }
+
+
+
+/********************************************************************************/
+
+
+
+
+.blue-top {
+  background: #0099e5;
+}
+
+
+.pricing-top {
+  padding: 1.2em 0;
+  background: #fd5c63;
+  text-align: center;
+}
+
+
+.pricing-bottom {
+  text-align: center;
+  padding: 2em;
+}
+
+
