@@ -484,7 +484,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .container, #hero .container-fluid {
     padding-top: 68px;
-    padding-left: 100px;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -502,13 +501,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
 
   #hero {
-    background: url("../img/hero/hero-responsive3.jpg");
+    background: url("../img/hero/hero-responsive5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment:scroll; 
     width: 100%;
-    min-height: 1080px;
+    min-height: 1600px;
   }
 
   #hero h1 {
