@@ -484,6 +484,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .container, #hero .container-fluid {
     padding-top: 68px;
+    padding-left: 100px;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -1404,7 +1405,7 @@ section {
 }
 
 .pricing h4 {
-  font-size: 40px;
+  font-size: 50px;
   color: #705ece;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
@@ -1717,7 +1718,7 @@ background-color: #ffffff;
 .contact .php-email-form button[type="submit"] {
   background: #ff595b;
   border: 0;
-  padding: 10px 35px 10px 35px;
+  padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
   border-radius: 5px;
