@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/hero/hero-desktop2-3.jpg");
+  background: url("../img/hero/hero-desktop2-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -426,6 +426,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .container, #hero .container-fluid {
   padding-top: 84px;
+  /*padding-left: 30px;*/
 }
 
 #hero h1 {
@@ -473,8 +474,7 @@ h1, h2, h3, h4, h5, h6 {
 /*cambio de traccion del hero*/
 @media (min-width: 1200px) {
   #hero {
-    background-attachment: scroll;
-    
+    background-attachment: scroll;    
   }
 }
 
@@ -484,6 +484,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .container, #hero .container-fluid {
     padding-top: 68px;
+    padding-left: 100px;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -495,6 +496,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero .hero-img img {
     width: 50%;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -1403,7 +1405,7 @@ section {
 }
 
 .pricing h4 {
-  font-size: 50px;
+  font-size: 40px;
   color: #705ece;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
@@ -1716,7 +1718,7 @@ background-color: #ffffff;
 .contact .php-email-form button[type="submit"] {
   background: #ff595b;
   border: 0;
-  padding: 10px 24px;
+  padding: 10px 35px 10px 35px;
   color: #fff;
   transition: 0.4s;
   border-radius: 5px;
@@ -2158,8 +2160,9 @@ Black: 900
 
 /********************************************************************************/
 
-
-
+.link-footer {
+  color: transparent;
+}
 
 .blue-top {
   background: #0099e5;
