@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/hero-fondo4.jpg");
+  background: url("../img/hero/hero-desktop2-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -500,11 +500,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
 
   #hero {
-    background: url("../img/hero-fondo8.jpg");
+    background: url("../img/hero/hero-responsive3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment:scroll; 
+    width: 100%;
+    min-height: 1080px;
   }
 
   #hero h1 {
@@ -528,7 +530,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575px), (max-height: 600px) {
   #hero {
-    height: auto;
+    background: url("../img/hero/hero-responsive3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment:scroll; 
+    width: 100%;
+    min-height: 1080px;
   }
 }
 
@@ -584,7 +592,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #5846f9;
+  background: #705ECE;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -916,6 +924,19 @@ section {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
+
+.services -title h2::after  {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ffffff;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+/*
 .services .iconbox-blue i {
   color: #47aeff;
 }
@@ -987,6 +1008,7 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
+*/
 
 /*--------------------------------------------------------------
 # Features
@@ -1467,7 +1489,7 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
-  background-color: #f9f8ff;
+  background-color: #ffffff;
 }
 
 .faq .section-title h2, .faq .section-title p {
@@ -1475,7 +1497,7 @@ section {
 }
 
 .faq .section-title h2::after {
-  background: rgba(255, 255, 255, 0.6);
+  background: #705ECE;
 }
 
 .faq .faq-list {
@@ -1972,6 +1994,7 @@ Black: 900
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   border-spacing: 0px;
+  min-width: 450px;
 }
 
 
@@ -2029,7 +2052,7 @@ Black: 900
 
 /* seccion catalogo*/
 #about4 {
-  background-image: url('../img/fondo-catalogo2.jpg');
+  background-image: url('../img/fondo-catalogo4.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
@@ -2102,10 +2125,12 @@ Black: 900
   transform: scale(1.1);
 }
 
+
 .values .box h3 {
   font-size: 24px;
   color: #012970;
   font-weight: 700;
+  margin-top: 20px;
   margin-bottom: 18px;
 }
 
@@ -2140,5 +2165,3 @@ Black: 900
   text-align: center;
   padding: 2em;
 }
-
-
