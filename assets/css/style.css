@@ -459,7 +459,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #D04547;
+  background: #cb3b3d;
   color: #fff;
 }
 
@@ -1404,11 +1404,15 @@ section {
 }
 
 .pricing h4 {
-  font-size: 50px;
+  font-size: 40px;
   color: #705ece;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
+}
+
+#titulo-precio-2 {
+  color: #514f4f;
 }
 
 .pricing h4 sup {
