@@ -1097,6 +1097,11 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+
+.testimonials { 
+  background-color: #ffffff;
+  }
+
 .testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
@@ -1372,6 +1377,11 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
+.pricing {
+  background-color: #ffffff;
+}
+
 .pricing .box {
   padding: 20px;
   background: #fff;
@@ -1604,6 +1614,10 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact { 
+background-color: #ffffff;
+}
+
 .contact .info-box {
   color: #444444;
   text-align: center;
